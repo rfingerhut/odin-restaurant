@@ -1,0 +1,82 @@
+:root{
+    --royal-blue:#2563EB;
+    --deep-blue: #1E40AF;
+    --light-blue: #e6effb;
+    --off-white: #F8F9FA;
+    --light-gray: #E8EDF2;
+    --med-gray: #8B95A5;
+    --dark-gray: #2D3748;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    background-color: white;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    padding: 0 3rem;
+    gap: 5rem;
+    background-color: white;
+}
+
+#logo{
+    flex: 1;
+    font-size: 3rem;
+    display: flex;
+    align-self: stretch;
+    color: var(--royal-blue);
+}
+
+nav{
+    flex: 3;
+    display: flex;
+    align-self: stretch;
+    justify-content: end;
+    gap: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items:center;
+}
+
+button{
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+#hero{
+    background-color: var(--light-blue);
+}
+
+section{
+    padding: 3rem;
+
+}
+
+section>h1, section>h2{
+    font-size: 2rem;
+    color: var(--dark-gray);
+}
+
+section>p{
+    font-size: 1rem;
+    color: var(--med-gray);
+}
