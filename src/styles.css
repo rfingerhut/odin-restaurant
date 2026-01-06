@@ -8,6 +8,20 @@
     --dark-gray: #2D3748;
 }
 
+@font-face {
+  font-family: 'Playfair';
+  src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face{
+    font-family: 'DM Sans';
+    src: url('./fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -21,14 +35,20 @@ h1,h2{
 
 #content{
     background-color: white;
-    height: 100vh;
+    height: fit-content;
 }
 
 header{
     display: flex;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     gap: 5rem;
     background-color: white;
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: 0 1px 3px rgba(37, 99, 235, 0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #logo{
@@ -37,6 +57,15 @@ header{
     display: flex;
     align-self: stretch;
     color: var(--royal-blue);
+    cursor: pointer;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair';
+}
+
+p, button{
+    font-family: 'DM Sans';
 }
 
 nav{
@@ -52,6 +81,14 @@ nav{
     align-items:center;
 }
 
+.buttonContainer>button{
+    transition: color 0.3s ease
+}
+
+.buttonContainer>button:hover{
+    color: var(--med-gray);
+}
+
 button{
     height: 40px;
     width: 100%;
@@ -60,15 +97,53 @@ button{
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--dark-gray);
+    text-transform: uppercase;
 }
 
 #hero{
     background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    padding: 15rem 0;
+}
+
+#hero>h1{
+    font-size: 5rem;
+}
+
+#hero>p{
+    font-size: 1.5rem;
+}
+
+#hero>div{
+    padding: 2rem 0 0 0;
+}
+
+#shop-now-button{
+    border: none;
+    border-radius: 8px;
+    background-color: var(--royal-blue);
+    color: white;
+    padding: 1.5rem 3rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s ease
+}
+
+#shop-now-button:hover{
+    background-color: var(--deep-blue);
 }
 
 section{
     padding: 3rem;
-
 }
 
 section>h1, section>h2{
