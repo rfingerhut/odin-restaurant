@@ -10,7 +10,14 @@ function renderHome() {
     const p = document.createElement('p');
     p.textContent = 'Home of the Famous Butter Creme Cofee Cake';
 
-    heroSection.append(title, p);
+    const container = document.createElement('div');
+
+    const button = document.createElement('button');
+    button.textContent = 'Shop Now';
+    button.id = 'shop-now-button';
+
+    container.append(button);
+    heroSection.append(title, p, container);
     content.append(heroSection);
 }
 
