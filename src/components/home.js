@@ -8,7 +8,7 @@ function renderHome() {
     title.textContent = "Your Local Neighborhood Bakery";
 
     const p = document.createElement('p');
-    p.textContent = 'Home of the Famous Butter Creme Cofee Cake';
+    p.textContent = 'Home of the Famous Butter Creme Coffee Cake';
 
     const container = document.createElement('div');
 
