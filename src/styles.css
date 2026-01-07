@@ -155,3 +155,32 @@ section>p{
     font-size: 1rem;
     color: var(--med-gray);
 }
+
+/* About Page */
+#aboutSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+#aboutSection>img{
+    width: 100%;
+}
+
+#aboutSection>div>h2{
+    font-size: 4rem;
+    color: var(--dark-gray);
+}
+
+#aboutSection>div>p{
+    color: var(--med-gray);
+    font-size: 1.1rem;
+}
+
+#aboutSection>div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
