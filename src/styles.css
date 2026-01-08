@@ -58,6 +58,7 @@ header{
     align-self: stretch;
     color: var(--royal-blue);
     cursor: pointer;
+    line-height: 2.5rem;
 }
 
 h1,h2,h3{
@@ -160,7 +161,7 @@ section>p{
 #aboutSection{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 #aboutSection>img{
