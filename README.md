@@ -6,8 +6,7 @@ A multi-page restaurant website built with **vanilla JavaScript** as part of **T
 All page content is dynamically rendered using JavaScript and organized with ES6 modules and Webpack.
 
 ## 🌐 Live Preview
-*(Optional — add if you deploy later)*  
-Coming soon
+https://rfingerhut.github.io/odin-restaurant/
 
 ## 📸 Screenshots
 
@@ -79,13 +78,16 @@ odin-restaurant/
    cd odin-restaurant
 
 2. Install dependencies:
-    npm install
+   ```bash
+   npm install
 
 3. Start the development server:
-    npx webpack serve
+   ```bash
+   npx webpack serve
 
 4. Open your browser and navigate to:
-    http://localhost:8080
+   ```bash
+   http://localhost:8080
 
 ## ⚙️ How It Works
 - template.html contains a minimal HTML skeleton:
